@@ -156,6 +156,7 @@
 
   &__form-btn {
     @extend %btn;
+    padding: 14px 36px;
   }
 }
 
@@ -280,7 +281,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     background-image: url("../images/decor/info-after-bg.svg");
@@ -545,7 +546,7 @@
 
   &--sale {
     .product-item__img-box::before {
-      content: 'SALE';
+      content: "SALE";
       @extend %btn;
       position: absolute;
       top: 25px;
@@ -601,7 +602,6 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      box-shadow: 0px 10px 40px 0px rgba(187, 187, 187, 0.3);
 
       span {
         font-size: 48px;
@@ -635,8 +635,8 @@
 }
 
 .blog {
-  padding: 50px 0 160 px;
-  background-image: url("../images/decor/blog-bg.png");
+  padding: 50px 0 160px;
+  background-image: url("../images/blog-bg.png");
   background-repeat: no-repeat;
   background-position: center center;
 
@@ -653,7 +653,7 @@
       z-index: -1;
       width: 126px;
       height: 53px;
-      background-image: url("../images/blog-bg.png");
+      background-image: url("../images/decor/blog-decor.png");
     }
   }
 
@@ -663,7 +663,7 @@
     transition: all 0.3s;
 
     &:hover {
-      box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+      box-shadow: 20px 0 60px 0 rgba(202, 202, 202, 0.35);
       border: none;
 
       .blog__item-link {
@@ -675,8 +675,8 @@
       }
     }
 
-
     &-imglink {
+      display: block;
 
       img {
         height: 288px;
@@ -686,7 +686,6 @@
 
     &-box {
       padding: 30px 40px;
-
     }
 
     &-info {
@@ -741,6 +740,12 @@
     }
   }
 }
+
+
+
+
+
+
 
 
 
