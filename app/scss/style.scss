@@ -769,10 +769,16 @@
     @extend %roboto-400;
     text-transform: uppercase;
     margin: 0 30px;
+  }
 
-    &--active {
-      color: $accent;
-    }
+  &__link--active {
+    color: $accent;
+    font-size: 22px;
+  }
+
+
+  &__form {
+    text-align: left;
   }
 
   &__label {
@@ -806,6 +812,11 @@
     margin-top: 12px;
     color: $accent;
     display: inline-block;
+
+  }
+
+  &__text {
+    margin-bottom: 25px;
   }
 }
 
