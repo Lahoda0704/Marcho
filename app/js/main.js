@@ -50,7 +50,7 @@ $(function() {
   });
   
 
-  $('.select-style, product-one__item-num').styler();
+  $('.select-style, .product-one__item-num').styler();
 
   $('.filter-price__input').ionRangeSlider({
     type: "double",
