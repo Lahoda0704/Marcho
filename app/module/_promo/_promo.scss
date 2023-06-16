@@ -19,20 +19,13 @@
     font-size: 22px
   }
 
-  &__title {
-    @extend %roboto-700;
-    font-size: 48px;
-    line-height: 0.5;
-    color: $title;
-    margin-bottom: 55px;
-  }
-
   &__clock {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 55px;
+    margin-top: 55px;
+  }
 
-    &-item {
+    &__clock-item {
       background-color: #fff;
       width: 120px;
       height: 120px;
@@ -49,7 +42,7 @@
         color: $title;
       }
     }
-  }
+  
 
   &__link {
     text-transform: uppercase;
@@ -69,5 +62,64 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .promo {
+    padding: 60px 0;
+
+    &__clock {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__clock-item {
+      margin: 20px 35px;
+    }
+  }
+
+  .partners {
+    padding: 60px 0;
+
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+    }
+
+    &__item {
+      margin: 10px 35px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .partners {
+    &__item {
+      margin: 10px 21px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .promo {
+    &__clock {
+      margin-top: 30px;
+    }
+
+    &__clock-item {
+      margin: 8px;
+    }
+
+    &__link {
+      margin-top: 30px;
+    }
+  }
+
+  .partners {
+    &__item {
+      margin: 10px 25px;
+    }
   }
 }
